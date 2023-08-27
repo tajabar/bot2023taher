@@ -1,0 +1,10 @@
+services:
+  drone-vc-p:
+    build: .
+    environment:
+      YOUR_OPENAI_API_KEY: $YOUR_OPENAI_API_KEY
+      YOUR_TELEGRAM_BOT_TOKEN: $YOUR_TELEGRAM_BOT_TOKEN
+      ELEVENLABS_API_KEY: $ELEVENLABS_API_KEY 
+    resources:
+      cpu: 1000m
+      memory: 3Gi
